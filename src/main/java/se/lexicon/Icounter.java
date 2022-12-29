@@ -1,5 +1,5 @@
 package se.lexicon;
 
-public interface Icounter<T> {
+public interface Icounter {
     void pritn();
 }

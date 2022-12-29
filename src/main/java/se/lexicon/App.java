@@ -6,10 +6,10 @@ package se.lexicon;
 public class App {
     public static void main(String[] args) {
 
-        Icounter<Integer> Icounter = new CounterImpl<Integer>(1);
+        Icounter Icounter = new CounterImpl<Integer>(1);
         Icounter.pritn();
 
-        Icounter<Double> Dcounter = new CounterImpl<Double>(3.0);
+        Icounter Dcounter = new CounterImpl<Double>(3.0);
         Dcounter.pritn();
     }
 }
