@@ -2,6 +2,7 @@ package se.lexicon;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 
 /**
  * Hello world!
@@ -22,10 +23,7 @@ public class App {
         intList.add(2);
         System.out.println("with Wild cards to print Int list");
         listPrint(intList);
-        strList.add("Nive");
-        System.out.println("with Wild cards to print Str list");
-        strList.add("Jay");
-        listPrint(strList);
+
 
 
     }
@@ -36,9 +34,10 @@ public class App {
         return t;
 
     }
-    // Using Wildcards : can accept any type
-    public static void listPrint(List<?> list){
+    // Using Wildcards : Since Parameter extends Number it can accept only numeric values
+    public static void listPrint(List<? extends Number> list){
 
         System.out.println(list);
+
     }
 }
